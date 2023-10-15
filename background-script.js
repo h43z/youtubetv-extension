@@ -1,5 +1,4 @@
 browser.webRequest.onBeforeSendHeaders.addListener(e => {
-  console.log(e)
   for(let header of e.requestHeaders) {
     if(header.name.toLowerCase() !== "user-agent")
       continue
